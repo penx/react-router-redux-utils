@@ -1,6 +1,6 @@
 {
   "name": "react-router-redux-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Get data from Redux state based upon React Router match params and pass as a prop to child component.",
   "main": "dist/index.js",
   "scripts": {
