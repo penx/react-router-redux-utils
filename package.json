@@ -6,7 +6,8 @@
   "scripts": {
     "build": "babel src --out-dir dist",
     "eslint": "eslint lib/**/*.js",
-    "eslint:fix": "eslint lib/**/*.js --fix"
+    "eslint:fix": "eslint lib/**/*.js --fix",
+    "prepare": "npm run build"
   },
   "author": "Alasdair McLeay",
   "license": "ISC",
