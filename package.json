@@ -7,7 +7,9 @@
     "build": "babel src --out-dir dist",
     "eslint": "eslint lib/**/*.js",
     "eslint:fix": "eslint lib/**/*.js --fix",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Alasdair McLeay",
   "license": "ISC",
@@ -28,7 +30,8 @@
     "react": "16.x",
     "react-redux": "5.x",
     "react-router": "4.x",
-    "redux": "3.x"
+    "redux": "3.x",
+    "snyk": "^1.189.0"
   },
   "repository": {
     "type": "git",
@@ -37,5 +40,6 @@
   "bugs": {
     "url": "https://github.com/penx/react-router-redux-utils/issues"
   },
-  "homepage": "https://github.com/penx/react-router-redux-utils#readme"
+  "homepage": "https://github.com/penx/react-router-redux-utils#readme",
+  "snyk": true
 }
